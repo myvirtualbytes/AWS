@@ -2,10 +2,10 @@
    "Version": "2012-10-17",
    "Statement": [
       {
-         "Sid": “AllowUserDaveBucketsPermissions”,
+         "Sid": "AllowUserDaveBucketsPermissions",
          "Effect": "Allow",
          "Principal": {
-            "AWS": "arn:aws:iam::123456789123:user/Dave"
+            "AWS": "arn:aws:iam::123456789123:user/dave"
          },
          "Action": [
             "s3:GetBucketLocation",
@@ -16,10 +16,10 @@
          ]
       },
       {
-         "Sid": “AllowUserDaveObjectPermission",
+         "Sid": "AllowUserDaveObjectPermission",
          "Effect": "Allow",
          "Principal": {
-            "AWS": "arn:aws:iam::123456789123:user/Dave"
+            "AWS": "arn:aws:iam::123456789123:user/dave"
          },
          "Action": [
              "s3:GetObject"
