@@ -1,32 +1,26 @@
 {
-   "Version": "2012-10-17",
-   "Statement": [
-      {
-         "Sid": "AllowUserDaveBucketsPermissions",
-         "Effect": "Allow",
-         "Principal": {
-            "AWS": "arn:aws:iam::123456789123:user/dave"
-         },
-         "Action": [
-            "s3:GetBucketLocation",
-            "s3:ListBucket"
-         ],
-         "Resource": [
-            "arn:aws:s3:::atg-accounting”
-         ]
-      },
-      {
-         "Sid": "AllowUserDaveObjectPermission",
-         "Effect": "Allow",
-         "Principal": {
-            "AWS": "arn:aws:iam::123456789123:user/dave"
-         },
-         "Action": [
-             "s3:GetObject"
-         ],
-         "Resource": [
-            "arn:aws:s3:::atg-accounting/*"
-         ]
-      }
-   ]
+	"Version": "2012-10-17",
+	"Statement": [
+		{
+			"Sid": "AllowUserDaveBucketPermission",
+			"Effect": "Allow",
+			"Principal": {
+				"AWS": "arn:aws:iam::123456123456:user/dave"
+			},
+			"Action": [
+				"s3:GetBucketLocation",
+				"s3:ListBucket"
+			],
+			"Resource": "arn:aws:s3:::atg-accounting"
+		},
+		{
+			"Sid": "AllowUserDaveObjectPermission",
+			"Effect": "Allow",
+			"Principal": {
+				"AWS": "arn:aws:iam::123456123456:user/dave"
+			},
+			"Action": "s3:GetObject",
+			"Resource": "arn:aws:s3:::atg-accounting/*"
+		}
+	]
 }
