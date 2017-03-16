@@ -2,7 +2,7 @@
 	"Version": "2012-10-17",
 	"Statement": [
 		{
-			"Sid": "AllowUserDaveBucketPermission",
+			"Sid": "AllowAccountBrootUserBucketPermission",
 			"Effect": "Allow",
 			"Principal": {
 				"AWS": "arn:aws:iam::123456123456:root"
@@ -14,7 +14,7 @@
 			"Resource": "arn:aws:s3:::atg-accounting"
 		},
 		{
-			"Sid": "AllowUserDaveObjectPermission",
+			"Sid": "AllowPutObjectPermission",
 			"Effect": "Allow",
 			"Principal": {
 				"AWS": "arn:aws:iam::123456123456:root"
