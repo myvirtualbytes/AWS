@@ -2,7 +2,7 @@
     "Version": "2012-10-17",
     "Statement": [
         {
-            "Sid": “AllowListBucket”,
+            "Sid": "AllowListBucket",
             "Effect": "Allow",
             "Action": [
                 "s3:ListBucket"
@@ -12,7 +12,7 @@
             ]
         },
         {
-            "Sid": “AllowPutObjectsToTheBucket”,
+            "Sid": "AllowPutObjectsToTheBucket",
             "Effect": "Allow",
             "Action": [
                 "s3:PutObject"
