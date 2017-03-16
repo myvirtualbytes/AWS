@@ -1,0 +1,29 @@
+{
+	"Version": "2012-10-17",
+	"Statement": [
+		{
+			"Sid": "AllowUserDaveBucketPermission",
+			"Effect": "Allow",
+			"Principal": {
+				"AWS": "arn:aws:iam::123456123456:root"
+			},
+			"Action": [
+				"s3:GetBucketLocation",
+				"s3:ListBucket"
+			],
+			"Resource": "arn:aws:s3:::atg-accounting"
+		},
+		{
+			"Sid": "AllowUserDaveObjectPermission",
+			"Effect": "Allow",
+			"Principal": {
+				"AWS": "arn:aws:iam::123456123456:root"
+			},
+			"Action": [
+				"s3:GetObject”,
+				"s3:PutObject”
+			],
+			"Resource": "arn:aws:s3:::atg-accounting/*"
+		}
+	]
+}
